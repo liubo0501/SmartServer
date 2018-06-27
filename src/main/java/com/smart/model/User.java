@@ -3,49 +3,19 @@ package com.smart.model;
 import java.util.Date;
 
 public class User {
-    private Short userId;
+    private Integer userId;
 
     private String userName;
 
     private String password;
 
-    private String name;
+    private Date createTime;
 
-    private String tele;
-
-    private String email;
-
-    private Short companyId;
-
-    private String companyDns;
-
-    private String dept;
-
-    private Short managerId;
-
-    private Boolean roleId;
-
-    private Boolean online;
-
-    private Date createT;
-
-    private Date modifyT;
-
-    private Date lastloginT;
-
-    private Integer count;
-
-    private Boolean enable;
-
-    private Byte tryLoginTimes;
-
-    private String verificationCode;
-
-    public Short getUserId() {
+    public Integer getUserId() {
         return userId;
     }
 
-    public void setUserId(Short userId) {
+    public void setUserId(Integer userId) {
         this.userId = userId;
     }
 
@@ -65,131 +35,11 @@ public class User {
         this.password = password == null ? null : password.trim();
     }
 
-    public String getName() {
-        return name;
+    public Date getCreateTime() {
+        return createTime;
     }
 
-    public void setName(String name) {
-        this.name = name == null ? null : name.trim();
-    }
-
-    public String getTele() {
-        return tele;
-    }
-
-    public void setTele(String tele) {
-        this.tele = tele == null ? null : tele.trim();
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email == null ? null : email.trim();
-    }
-
-    public Short getCompanyId() {
-        return companyId;
-    }
-
-    public void setCompanyId(Short companyId) {
-        this.companyId = companyId;
-    }
-
-    public String getCompanyDns() {
-        return companyDns;
-    }
-
-    public void setCompanyDns(String companyDns) {
-        this.companyDns = companyDns == null ? null : companyDns.trim();
-    }
-
-    public String getDept() {
-        return dept;
-    }
-
-    public void setDept(String dept) {
-        this.dept = dept == null ? null : dept.trim();
-    }
-
-    public Short getManagerId() {
-        return managerId;
-    }
-
-    public void setManagerId(Short managerId) {
-        this.managerId = managerId;
-    }
-
-    public Boolean getRoleId() {
-        return roleId;
-    }
-
-    public void setRoleId(Boolean roleId) {
-        this.roleId = roleId;
-    }
-
-    public Boolean getOnline() {
-        return online;
-    }
-
-    public void setOnline(Boolean online) {
-        this.online = online;
-    }
-
-    public Date getCreateT() {
-        return createT;
-    }
-
-    public void setCreateT(Date createT) {
-        this.createT = createT;
-    }
-
-    public Date getModifyT() {
-        return modifyT;
-    }
-
-    public void setModifyT(Date modifyT) {
-        this.modifyT = modifyT;
-    }
-
-    public Date getLastloginT() {
-        return lastloginT;
-    }
-
-    public void setLastloginT(Date lastloginT) {
-        this.lastloginT = lastloginT;
-    }
-
-    public Integer getCount() {
-        return count;
-    }
-
-    public void setCount(Integer count) {
-        this.count = count;
-    }
-
-    public Boolean getEnable() {
-        return enable;
-    }
-
-    public void setEnable(Boolean enable) {
-        this.enable = enable;
-    }
-
-    public Byte getTryLoginTimes() {
-        return tryLoginTimes;
-    }
-
-    public void setTryLoginTimes(Byte tryLoginTimes) {
-        this.tryLoginTimes = tryLoginTimes;
-    }
-
-    public String getVerificationCode() {
-        return verificationCode;
-    }
-
-    public void setVerificationCode(String verificationCode) {
-        this.verificationCode = verificationCode == null ? null : verificationCode.trim();
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
     }
 }
